@@ -1,0 +1,48 @@
+.title {
+    margin: 30px;
+    margin-bottom: 70px;
+    width: fit-content;
+    transition: 0.2s ease-in-out;
+}
+
+.title:hover{
+    color: #5BBD6B;
+    transform: rotate(-6deg);
+}
+
+.bar {
+    width: 5000px;
+    height: 30px;
+    background-color: #5BBD6B;
+    transform: rotate(-2deg);
+    position: absolute;
+    top: 10px;
+    left: -50px;
+    animation: bar 50s linear infinite;
+    color: #3A3A3E;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    text-wrap: nowrap;
+    font-weight: 500;
+    gap: 20px;
+}
+
+
+.main{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+}
+
+@keyframes bar {
+    0% {
+        transform: rotate(-2deg) translate3d(0, 0, 0);
+    }
+
+    100% {
+        transform: rotate(-2deg) translate3d(-50%, 0, 0);
+    }
+}
